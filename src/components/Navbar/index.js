@@ -55,6 +55,7 @@ const MobileIcon = styled.div`
     font-size: 1.5rem;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
+    z-index: 1010;
   }
 `;
 
@@ -104,7 +105,8 @@ const GithubButton = styled.a`
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 70%;
+  height: 50px;
+  width: auto;
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
@@ -113,12 +115,15 @@ const GithubButton = styled.a`
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
-  :hover {
+
+  &:hover {
     background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
   }
+
   @media screen and (max-width: 768px) {
     font-size: 14px;
+    height: 45px;
   }
 `;
 
@@ -132,20 +137,22 @@ const MobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  gap: 14px;
   position: absolute;
   top: 80px;
   right: 0;
-  width: 100%;
+  width: 60%;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card_light + 99};
-  transition: all 0.6s ease-in-out;
-  transform: ${({ isOpen }) =>
-    isOpen ? "translateY(0)" : "translateY(-100%)"};
+  background: ${({ theme }) => theme.card_light};
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
+  opacity: ${({ open }) => (open ? "1" : "0")};
+  z-index: ${({ open }) =>
+    open
+      ? "1000"
+      : "-1"}; /* Ajout d'un z-index pour bien gérer la superposition */
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
 // const MobileMenuItems = styled.ul`
@@ -235,7 +242,13 @@ const Navbar = () => {
           <NavLink href="#education">Formations</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Profil Github</GithubButton>
+          <GithubButton
+            href="https://github.com/mAthilde43/Portfolio.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Profil Github
+          </GithubButton>
         </ButtonContainer>
       </NavContainer>
       {open && (
@@ -246,7 +259,7 @@ const Navbar = () => {
               setOpen(!open);
             }}
           >
-            About
+            Accueil
           </MobileMenuLinks>
           <MobileMenuLinks
             href="#skills"
@@ -254,7 +267,7 @@ const Navbar = () => {
               setOpen(!open);
             }}
           >
-            Skills
+            Compétences
           </MobileMenuLinks>
           <MobileMenuLinks
             href="#experience"
@@ -262,7 +275,7 @@ const Navbar = () => {
               setOpen(!open);
             }}
           >
-            Experience
+            Expériences
           </MobileMenuLinks>
           <MobileMenuLinks
             href="#projects"
@@ -270,7 +283,7 @@ const Navbar = () => {
               setOpen(!open);
             }}
           >
-            Projects
+            Projets
           </MobileMenuLinks>
           <MobileMenuLinks
             href="#education"
@@ -278,7 +291,7 @@ const Navbar = () => {
               setOpen(!open);
             }}
           >
-            Education
+            Formations
           </MobileMenuLinks>
           <GithubButton
             style={{
@@ -290,7 +303,7 @@ const Navbar = () => {
             href="/"
             target="_blank"
           >
-            Github Profile
+            Profil Github
           </GithubButton>
         </MobileMenu>
       )}

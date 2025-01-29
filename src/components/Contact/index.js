@@ -22,6 +22,10 @@ const Wrapper = styled.div`
   max-width: 1350px;
   padding: 0px 0px 80px 0px;
   gap: 12px;
+
+  @media (max-width: 768px) {
+    padding: 0px 15px 60px 15px;
+  }
 `;
 
 const Title = styled.div`
@@ -59,6 +63,11 @@ const ContactInfo = styled.div`
   gap: 12px;
   width: 95%;
   max-width: 600px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    margin-top: 20px;
+  }
 `;
 
 const InfoItem = styled.div`
@@ -76,6 +85,11 @@ const InfoItem = styled.div`
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    text-align: center;
   }
 `;
 

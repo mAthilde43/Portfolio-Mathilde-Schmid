@@ -151,7 +151,12 @@ const ExperienceCard = ({ experience }) => {
         </Body>
       </Top>
       <Description>
-        {experience?.desc && <Span>{experience?.desc}</Span>}
+        {experience?.desc &&
+          experience?.desc.map((line, index) => (
+            <p key={index}>
+              <b>•</b> {line}
+            </p>
+          ))}
         {experience?.skills && (
           <>
             <br />
