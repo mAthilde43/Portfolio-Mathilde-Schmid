@@ -217,7 +217,7 @@ const Hero = () => {
           <HeroLeftContainer>
             <Title>{Bio.name}</Title>
             <TextLoop>
-              Je suis un
+              Je suis une
               <Span>
                 <Typewriter
                   options={{
