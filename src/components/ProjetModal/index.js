@@ -22,6 +22,16 @@ const ModalContainer = styled.div`
   position: relative;
   transition: all 0.5s ease;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    max-width: 600px;
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 90%;
+    padding: 10px;
+  }
 `;
 
 const CloseButton = styled.button`
@@ -38,6 +48,11 @@ const CloseButton = styled.button`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    right: 15px;
+  }
 `;
 
 const Image = styled.img`
@@ -46,16 +61,42 @@ const Image = styled.img`
   object-fit: cover;
   border: 1.5px solid #854ce6;
   border-radius: 20px;
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+
+  @media (max-width: 480px) {
+    height: 150px;
+  }
 `;
 
 const Description = styled.p`
   font-size: 17px;
   margin: 15px 60px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin: 15px 30px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin: 10px 20px;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const ProjectModal = ({ project, setOpenModal }) => {
