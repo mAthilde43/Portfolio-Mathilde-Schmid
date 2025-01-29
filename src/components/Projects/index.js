@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import ProjectCard from "../Cards/ProjectCards";
 import { projects } from "../../data/constants";
+import ProjectModal from "../ProjetModal/index";
+import { useState } from "react";
 
 const Container = styled.div`
   background: linear-gradient(
@@ -64,7 +66,8 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-const Projects = ({ openModal, setOpenModal }) => {
+const Projects = () => {
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <Container id="projects">
       <Wrapper>
@@ -77,12 +80,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               <ProjectCard
                 key={project.id}
                 project={project}
-                openModal={openModal}
                 setOpenModal={setOpenModal}
               />
             ))}
         </CardContainer>
       </Wrapper>
+      {openModal.state && (
+        <ProjectModal project={openModal.project} setOpenModal={setOpenModal} />
+      )}
     </Container>
   );
 };

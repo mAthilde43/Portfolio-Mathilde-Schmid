@@ -252,7 +252,7 @@ export const projects = [
     image: PortfolioImage,
     tags: ["React Js"],
     category: "web app",
-    github: "",
+    github: "https://github.com/mAthilde43/Portfolio.git",
     webapp: "Pas encore en ligne",
   },
   {
