@@ -2,6 +2,7 @@ import MiamzelleImage from "../components/images/Miam-Zelle-Recette.png";
 import PortfolioImage from "../components/images/Portfolio.png";
 import StradaStaImage from "../components/images/StradSTA.png";
 import ProjetCsharpImage from "../components/images/ProjetC#.png";
+import CVMS from "../components/images/CV_Mathilde_Schmid.png";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -14,7 +15,7 @@ export const Bio = {
   description:
     "Actuellement en Bachelor CDA (Concepteur Développeur d'Applications) en alternance, je suis à la recherche d'une entreprise pouvant m'accueillir dès la rentrée 2025 pour poursuivre mes études en alternance dans le cadre d’un Master M2I (Manager en Ingénierie Informatique).",
   github: "https://github.com/mAthilde43",
-  resume: "mettre CV",
+  resume: CVMS,
   // linkedin: "",
 };
 
