@@ -102,7 +102,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              25 rue de la Krutenau, 67000 Strasbourg
+              25 Rue de la Krutenau <br /> 67000 Strasbourg
             </a>
           </InfoItem>
           <InfoItem>

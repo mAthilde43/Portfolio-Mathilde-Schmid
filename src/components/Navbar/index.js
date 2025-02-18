@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useTheme } from "styled-components";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -30,6 +32,7 @@ const NavContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
+  position: relative;
 `;
 
 const NavLogo = styled(LinkR)`
@@ -147,10 +150,7 @@ const MobileMenu = styled.div`
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   opacity: ${({ open }) => (open ? "1" : "0")};
-  z-index: ${({ open }) =>
-    open
-      ? "1000"
-      : "-1"}; /* Ajout d'un z-index pour bien gérer la superposition */
+  z-index: ${({ open }) => (open ? "9999" : "-1")};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 `;
@@ -211,6 +211,21 @@ const MobileMenuLinks = styled(LinkR)`
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  }, [location]);
+
   return (
     <Nav>
       <NavContainer>
@@ -253,46 +268,22 @@ const Navbar = () => {
       </NavContainer>
       {open && (
         <MobileMenu open={open}>
-          <MobileMenuLinks
-            href="#about"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
+          <MobileMenuLinks to="#about" onClick={() => setOpen(!open)}>
             Accueil
           </MobileMenuLinks>
-          <MobileMenuLinks
-            href="#skills"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
+          <MobileMenuLinks to="#skills" onClick={() => setOpen(!open)}>
             Compétences
           </MobileMenuLinks>
-          <MobileMenuLinks
-            href="#experience"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
+          <MobileMenuLinks to="#experience" onClick={() => setOpen(!open)}>
             Expériences
           </MobileMenuLinks>
-          <MobileMenuLinks
-            href="#projects"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
+          <MobileMenuLinks to="#projects" onClick={() => setOpen(!open)}>
             Projets
           </MobileMenuLinks>
-          <MobileMenuLinks
-            href="#education"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
+          <MobileMenuLinks to="#education" onClick={() => setOpen(!open)}>
             Formations
           </MobileMenuLinks>
+
           <GithubButton
             style={{
               padding: "10px 16px",
