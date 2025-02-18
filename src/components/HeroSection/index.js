@@ -79,6 +79,7 @@ const HeroLeftContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 370px;
   }
 `;
 
