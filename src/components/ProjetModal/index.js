@@ -59,7 +59,7 @@ const Image = styled.img`
   width: auto;
   height: 300px;
   object-fit: cover;
-  border: 1.5px solid #854ce6;
+  border: 1.5px solid #4c80e6;
   border-radius: 20px;
 
   @media (max-width: 768px) {

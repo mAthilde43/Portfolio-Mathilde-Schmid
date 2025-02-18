@@ -40,17 +40,6 @@ const Title = styled.div`
   }
 `;
 
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-`;
-
 const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
@@ -98,7 +87,6 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>N'hésitez pas à me contacter pour toute question !</Desc>
         <ContactInfo>
           <InfoItem>
             📞 Téléphone : <a href="tel:+330786242680">+33 7 86 24 26 80</a>{" "}
@@ -108,7 +96,14 @@ const Contact = () => {
             <a href="mathilde.schmid@orange.fr">mathilde.schmid@orange.fr</a>{" "}
           </InfoItem>
           <InfoItem>
-            📍 Adresse : 25 rue de la Krutenau, 67000 Strasbourg{" "}
+            📍 Adresse :{" "}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=25+rue+de+la+Krutenau,+67000+Strasbourg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              25 rue de la Krutenau, 67000 Strasbourg
+            </a>
           </InfoItem>
           <InfoItem>
             🔗 LinkedIn :{" "}

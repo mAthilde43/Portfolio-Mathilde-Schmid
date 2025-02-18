@@ -63,7 +63,7 @@ const Card = styled.div`
     overflow: visible;
     -webkit-line-clamp: unset;
   }
-  border: 0.1px solid #854ce6;
+  border: 0.1px solid #4c80e6;
 `;
 
 const Top = styled.div`
@@ -116,15 +116,6 @@ const Date = styled.div`
     font-size: 10px;
   }
 `;
-
-// const Grade = styled.div`
-//   font-size: 14px;
-//   font-weight: 500;
-//   color: ${({ theme }) => theme.text_secondary + 99};
-//   @media only screen and (max-width: 768px) {
-//     font-size: 12px;
-//   }
-// `;
 
 const EducationCard = ({ education }) => {
   return (

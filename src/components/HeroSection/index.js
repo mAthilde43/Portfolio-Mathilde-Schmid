@@ -5,6 +5,8 @@ import Typewriter from "typewriter-effect";
 // import { Typewriter } from "react-simple-typewriter";
 import HeroImg from "../images/HeroImage.jpeg";
 import HeroBgAnimation from "../HeroBgAnimation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons"; // Import de l'icône
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -166,10 +168,9 @@ const ResumeButton = styled.a`
   font-size: 20px;
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: linear-gradient(225deg, rgba(30, 144, 255, 1) 0%, rgba(138, 43, 226, 1) 100%); /* bleu foncé et violet */
+  background: -moz-linear-gradient(225deg, rgba(30, 144, 255, 1) 0%, rgba(138, 43, 226, 1) 100%);
+  background: -webkit-linear-gradient(225deg, rgb(28 120 210) 0%, rgba(138, 43, 226, 1) 100%)
   box-shadow:  20px 20px 60px #1F2634,
   -20px -20px 60px #1F2634;
   &:hover {
@@ -182,7 +183,6 @@ const ResumeButton = styled.a`
     padding: 12px 0;
     font-size: 18px;
   } 
-
 `;
 
 const Image = styled.img`
@@ -231,6 +231,10 @@ const Hero = () => {
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="blank">
               Mon Curriculum Vitae
+              <FontAwesomeIcon
+                icon={faDownload}
+                style={{ marginLeft: "8px" }}
+              />
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>

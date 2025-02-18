@@ -20,13 +20,15 @@ const Body = styled.div`
 const Wrapper = styled.div`
   background: linear-gradient(
       38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
+      rgba(0, 70, 209, 0.15) 0%,
+      /* bleu clair avec transparence */ rgba(0, 70, 209, 0) 50%
+        /* bleu foncé avec transparence */
     ),
     linear-gradient(
       141.27deg,
-      rgba(0, 70, 209, 0) 50%,
-      rgba(0, 70, 209, 0.15) 100%
+      rgba(201, 32, 184, 0) 50%,
+      /* violet clair avec transparence */ rgba(204, 0, 187, 0.15) 100%
+        /* violet foncé avec transparence */
     );
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
@@ -49,8 +51,7 @@ function App() {
           </Wrapper>
           <Wrapper>
             <Contact />
-          </Wrapper>
-          <Wrapper>
+
             <Footer />
           </Wrapper>
         </Body>

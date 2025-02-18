@@ -1,5 +1,7 @@
 import MiamzelleImage from "../components/images/Miam-Zelle-Recette.png";
 import PortfolioImage from "../components/images/Portfolio.png";
+import StradaStaImage from "../components/images/StradSTA.png";
+import ProjetCsharpImage from "../components/images/ProjetC#.png";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -10,11 +12,10 @@ export const Bio = {
     "QA Tester",
   ],
   description:
-    // "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-    "Actuellement en Bachelor CDA (Concepteur Développeur d'Applications) en alternance, je suis à la recherche d'une entreprise pouvant m'accueillir dès la rentrée 2025 pour poursuivre mes études en alternance dans le cadre d’un Master en M2I.",
+    "Actuellement en Bachelor CDA (Concepteur Développeur d'Applications) en alternance, je suis à la recherche d'une entreprise pouvant m'accueillir dès la rentrée 2025 pour poursuivre mes études en alternance dans le cadre d’un Master M2I (Manager en Ingénierie Informatique).",
   github: "https://github.com/mAthilde43",
   resume: "mettre CV",
-  // linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+  // linkedin: "",
 };
 
 export const skills = [
@@ -31,11 +32,16 @@ export const skills = [
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
-      // {
-      //   name: "Next Js",
-      //   image:
-      //     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
-      // },
+      {
+        name: "C#",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1820px-Logo_C_sharp.svg.png",
+      },
+      {
+        name: "TypeScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+      },
       {
         name: "JavaScript",
         image:
@@ -105,11 +111,6 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
       },
-      // {
-      //   name: "Netlify",
-      //   image:
-      //     "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      // },
       {
         name: "VS Code",
         image: "https://chris-ayers.com/assets/images/vscode-logo.png",
@@ -126,7 +127,7 @@ export const skills = [
       {
         name: "WordPress",
         image:
-          "https://download.logo.wine/logo/WordPress.com/WordPress.com-Logo.wine.png",
+          "https://icones.pro/wp-content/uploads/2022/05/logo-wordpress.png",
       },
     ],
   },
@@ -142,7 +143,7 @@ export const experiences = [
     desc: [
       "Réalisation de tests sur l’application web et mobile pour assurer la qualité et la stabilité des fonctionnalités.",
       "Automatisation des tests en utilisant Cypress afin d’optimiser le processus de validation et de détecter rapidement les anomalies.",
-      "Modifications et améliorations du front-end, en ajustant l’interface utilisateur et en corrigeant les bugs pour une meilleure expérience utilisateur.",
+      "Modifications et améliorations du front-end, en ajustant l’interface utilisateur et en corrigeant les erreurs pour une meilleure expérience utilisateur.",
     ],
     skills: ["React JS", "JavaScript", "TypeScript", "Cypress"],
     doc: "",
@@ -181,14 +182,14 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/448760001_966068848646695_8690179196462289170_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OouSRYTCX6kQ7kNvgFMAT3T&_nc_zt=23&_nc_ht=scontent-cdg4-3.xx&_nc_gid=AQ8AnPGT_FChoAf_NLTVqyr&oh=00_AYDkpxSoWwhsg2-ZYuScwySV28CTS8TTBBPI31KjDyGESg&oe=679FCF66",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRO5-IfJ9uxgIMj55fejGvqQKwi22Bumxeg&s",
     role: "Animatrice",
     company: "Judo Club Quatzenheim",
     date: "Été 2021 - 2022 - 2023",
     desc: [
       "Encadrement d’enfants et d’adolescents",
       "Elaboration et mis en place d’ateliers",
-      "Partage et transmission de connaissance",
+      "Partage et transmission de connaissances",
     ],
   },
 ];
@@ -225,7 +226,6 @@ export const education = [
     degree: "Brevet des collèges",
     school: "Collège du Kochersberg, Truchtersheim",
     date: "2018 - 2019",
-    // desc: "",
   },
 ];
 
@@ -235,7 +235,7 @@ export const projects = [
     title: "Miam'Zelle Recette",
     date: "Oct 2024 - Jan 2025",
     description:
-      "Développé dans le cadre d'une formation CDA à la CCI Campus de Strasbourg, Miam'Zelle Recette est un un livre de recettes. \n L’objectif de ce projet était de créer une plateforme simple où les utilisateurs peuvent consulter des recettes, ajouter leurs propres recettes, enregistrer des recettes en favoris et rechercher des recettes.",
+      "Développé dans le cadre de ma formation CDA à la CCI Campus de Strasbourg, Miam'Zelle Recette est un un livre de recettes. \n L’objectif de ce projet était de créer une plateforme simple où les utilisateurs peuvent consulter, ajouter, enregistrer et rechercher des recettes.",
     image: MiamzelleImage,
     tags: ["React Js", "Node.js", "Express", "MySQL"],
     category: "web app",
@@ -255,22 +255,34 @@ export const projects = [
     webapp: "Pas encore en ligne",
   },
   {
-    id: 11,
-    title: "Projet C#",
+    id: 10,
+    title: "Strada STA",
     date: "Fev 2025",
-    description: "projet en cours à décrire",
-    image: "",
-    tags: ["C#"],
+    description:
+      "Développé pour une entreprise de terrassement, ce site vitrine a pour objectif de présenter de manière claire et accessible les services proposés. L'accent est mis sur une interface intuitive et une navigation fluide pour les utilisateurs.",
+    image: StradaStaImage,
+    tags: ["Wordpress"],
     category: "web app",
-    github: "",
-    webapp: "Pas encore en ligne",
+    webapp: "Bientôt disponible",
   },
+  // {
+  //   id: 11,
+  //   title: "Projet C# ",
+  //   date: "Mars 2025",
+  //   description:
+  //     "Dans le cadre de ma formation, nous devons réalisé un projet en C# .NET. Ce projet a pour objectif de mettre en pratique les concepts appris encours de formations.",
+  //   image: ProjetCsharpImage,
+  //   tags: ["C#"],
+  //   category: "web app",
+  //   // github: "",
+  //   webapp: "Projet local",
+  // },
 ];
 
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
-];
+// export const TimeLineData = [
+//   { year: 2017, text: "Started my journey" },
+//   { year: 2018, text: "Worked as a freelance developer" },
+//   { year: 2019, text: "Founded JavaScript Mastery" },
+//   { year: 2020, text: "Shared my projects with the world" },
+//   { year: 2021, text: "Started my own platform" },
+// ];

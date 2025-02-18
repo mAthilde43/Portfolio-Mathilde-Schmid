@@ -219,7 +219,7 @@ const Navbar = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "white",
+              color: "#4c80e6",
               marginBottom: "20",
               cursor: "pointer",
             }}
