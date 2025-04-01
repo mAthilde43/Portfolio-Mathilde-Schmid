@@ -6,6 +6,8 @@ import { FaBars } from "react-icons/fa";
 import { useTheme } from "styled-components";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { FaMoon, FaSun } from "react-icons/fa";
+import { darkTheme, lightTheme } from "../../utils/Themes";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -54,7 +56,7 @@ const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 45%);
     font-size: 1.5rem;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
@@ -82,8 +84,9 @@ const NavLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.primary};
+    transform: scale(1.1);
   }
 
   &.active {
@@ -155,24 +158,13 @@ const MobileMenu = styled.div`
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 `;
 
-// const MobileMenuItems = styled.ul`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 32px;
-//   list-style: none;
-//   width: 100%;
-//   height: 100%;
-// `
-
 const MobileMenuLinks = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.primary};
   }
 
@@ -181,37 +173,31 @@ const MobileMenuLinks = styled(LinkR)`
   }
 `;
 
-//   const MobileLink = styled.a`
-//   color: ${({ theme }) => theme.text_primary};
-//   font-weight: 500;
-//   cursor: pointer;
-//   transition: all 0.2s ease-in-out;
-//   text-decoration: none;
-//   :hover {
-//     color: ${({ theme }) => theme.primary};
-//   }
+const ThemeToggleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  padding-right: 20px;
+  z-index: 1010;
+  position: relative;
 
-//   &.active {
-//     border-bottom: 2px solid ${({ theme }) => theme.primary};
-//   }
-// `;
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    padding-right: 40px;
+  }
+`;
 
-//  const MobileNavLogo = styled(LinkR)`
-//   width: 80%;
-//   padding: 0 6px;
-//   display: flex;
-//   justify-content: start;
-//   align-items: center;
-//   text-decoration: none;
-//   @media (max-width: 640px) {
-//     padding: 0 0px;
-//   }
-// `;
-
-const Navbar = () => {
+const Navbar = ({ toggleTheme }) => {
   const [open, setOpen] = React.useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const theme = useTheme();
   const location = useLocation();
+
+  const toggleThemeHandler = () => {
+    setIsDarkMode(!isDarkMode);
+    toggleTheme();
+  };
 
   useEffect(() => {
     const hash = location.hash;
@@ -242,13 +228,6 @@ const Navbar = () => {
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
-        <MobileIcon>
-          <FaBars
-            onClick={() => {
-              setOpen(!open);
-            }}
-          />
-        </MobileIcon>
         <NavItems>
           <NavLink href="#about">Accueil</NavLink>
           <NavLink href="#skills">Compétences</NavLink>
@@ -265,6 +244,23 @@ const Navbar = () => {
             Profil Github
           </GithubButton>
         </ButtonContainer>
+        <ThemeToggleContainer
+          onClick={toggleThemeHandler}
+          style={{ cursor: "pointer" }}
+        >
+          {isDarkMode ? (
+            <FaSun size="25px" color="4C80E6" />
+          ) : (
+            <FaMoon size="25px" color="4C80E6" />
+          )}
+        </ThemeToggleContainer>
+        <MobileIcon>
+          <FaBars
+            onClick={() => {
+              setOpen(!open);
+            }}
+          />
+        </MobileIcon>
       </NavContainer>
       {open && (
         <MobileMenu open={open}>

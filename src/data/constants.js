@@ -130,6 +130,11 @@ export const skills = [
         image:
           "https://icones.pro/wp-content/uploads/2022/05/logo-wordpress.png",
       },
+      {
+        name: "Jira",
+        image:
+          "https://images.icon-icons.com/2699/PNG/512/atlassian_jira_logo_icon_170511.png",
+      },
     ],
   },
 ];

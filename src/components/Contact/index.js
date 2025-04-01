@@ -115,6 +115,7 @@ const Contact = () => {
               Mon Profil
             </a>
           </InfoItem>
+          <InfoItem>🚗 Permis B</InfoItem>
         </ContactInfo>
       </Wrapper>
     </Container>

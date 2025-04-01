@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-// import { Typewriter } from "react-simple-typewriter";
 import HeroImg from "../images/HeroImage.jpeg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons"; // Import de l'icône
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};

@@ -100,6 +100,9 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  position: relative;
+  cursor: pointer;
+
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -108,11 +111,26 @@ const SkillItem = styled.div`
     font-size: 14px;
     padding: 6px 12px;
   }
+
+  &:hover {
+    &::after {
+      content: attr(data-name);
+      position: absolute;
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(76, 128, 230, 0.7);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+  }
 `;
 
 const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 `;
 
 const Skills = () => {
@@ -126,12 +144,12 @@ const Skills = () => {
         </Desc>
         <SkillsContainer>
           {skills.map((item) => (
-            <Skill>
+            <Skill key={item.name} data-name={item.name}>
               <SkillTitle>{item.title}</SkillTitle>
               <SkillList>
                 {item.skills.map((skill) => (
-                  <SkillItem>
-                    <SkillImage src={skill.image} />
+                  <SkillItem key={skill.name} data-name={skill.name}>
+                    <SkillImage src={skill.image} alt={skill.name} />
                   </SkillItem>
                 ))}
               </SkillList>
