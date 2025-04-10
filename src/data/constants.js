@@ -1,6 +1,8 @@
 import MiamzelleImage from "../components/images/Miam-Zelle-Recette.png";
 import PortfolioImage from "../components/images/Portfolio.png";
 import StradaStaImage from "../components/images/StradSTA.png";
+import LuxeOClockImage from "../components/images/Luxe-o-Clock.png";
+import GestTimeImage from "../components/images/Gest-Time.png";
 import ProjetCsharpImage from "../components/images/ProjetC#.png";
 import CVMS from "../components/images/CV_Mathilde_Schmid.png";
 
@@ -266,7 +268,7 @@ export const projects = [
     webapp: "Pas encore en ligne",
   },
   {
-    id: 10,
+    id: 11,
     title: "Strada STA",
     date: "Fev 2025",
     description:
@@ -276,6 +278,30 @@ export const projects = [
     category: "web app",
     webapp: "Bientôt disponible",
   },
+
+  {
+    id: 11,
+    title: "Luxe o'Clock",
+    date: "Avril 2025",
+    description:
+      "Luxe o’Clock est un projet personnel développé dans le cadre de ma montée en compétences en développement web. Il s'agit d'un site vitrine dédié à des montres de luxe, alliant élégance, raffinement et modernité. Le projet met en avant l’univers horloger haut de gamme.",
+    image: LuxeOClockImage,
+    tags: ["React Js", "Vite", "Tailwind"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+  {
+    id: 12,
+    title: "Gest-Time",
+    date: "Mars - Avril 2025",
+    description:
+      "Gest-Time est une application web développée dans le cadre d’un projet personnel. Elle permet de centraliser et de simplifier la gestion des employés, des absences et des congés au sein d’une entreprise. L’outil offre une interface intuitive pour visualiser les présences, planifier les congés, suivre les visites médicales, gérer les véhicules attribués aux salariés, et bien plus encore. Ce projet a pour objectif d’optimiser l’organisation interne et d’automatiser certaines tâches RH.",
+    image: GestTimeImage,
+    tags: ["React Js", "Vite", "MySQL"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+
   // {
   //   id: 11,
   //   title: "Projet C# ",
