@@ -49,6 +49,11 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
       {
+        name: "Tailwind Css",
+        image:
+          "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/31/tailwind.png",
+      },
+      {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
       },
