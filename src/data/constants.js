@@ -3,6 +3,7 @@ import PortfolioImage from "../components/images/Portfolio.png";
 import StradaStaImage from "../components/images/StradSTA.png";
 import LuxeOClockImage from "../components/images/Luxe-o-Clock.png";
 import GestTimeImage from "../components/images/Gest-Time.png";
+import FoxartImage from "../components/images/Foxart.png";
 import ProjetCsharpImage from "../components/images/ProjetC#.png";
 import CVMS from "../components/images/CV_Mathilde_Schmid.png";
 
@@ -118,6 +119,11 @@ export const skills = [
         name: "Docker",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+      },
+      {
+        name: "Firebase",
+        image:
+          "https://brandlogos.net/wp-content/uploads/2025/03/firebase_icon-logo_brandlogos.net_tcvck-512x646.png",
       },
       {
         name: "VS Code",
@@ -244,7 +250,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
+    id: 10,
     title: "Miam'Zelle Recette",
     date: "Oct 2024 - Jan 2025",
     description:
@@ -256,7 +262,7 @@ export const projects = [
     webapp: "Pas encore en ligne",
   },
   {
-    id: 10,
+    id: 11,
     title: "Portfolio",
     date: "Jan 2025",
     description:
@@ -268,7 +274,7 @@ export const projects = [
     webapp: "Pas encore en ligne",
   },
   {
-    id: 11,
+    id: 12,
     title: "Strada STA",
     date: "Fev 2025",
     description:
@@ -280,7 +286,7 @@ export const projects = [
   },
 
   {
-    id: 11,
+    id: 13,
     title: "Luxe o'Clock",
     date: "Avril 2025",
     description:
@@ -291,13 +297,24 @@ export const projects = [
     webapp: "Bientôt disponible",
   },
   {
-    id: 12,
+    id: 14,
     title: "Gest-Time",
     date: "Mars - Avril 2025",
     description:
       "Gest-Time est une application web développée dans le cadre d’un projet personnel. Elle permet de centraliser et de simplifier la gestion des employés, des absences et des congés au sein d’une entreprise. L’outil offre une interface intuitive pour visualiser les présences, planifier les congés, suivre les visites médicales, gérer les véhicules attribués aux salariés, et bien plus encore. Ce projet a pour objectif d’optimiser l’organisation interne et d’automatiser certaines tâches RH.",
     image: GestTimeImage,
     tags: ["React Js", "Vite", "MySQL"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+  {
+    id: 15,
+    title: "Foxart",
+    date: "Mai 2025",
+    description:
+      "Projet personnel réalisé pour me perfectionner avec Tailwind CSS. Cette landing page responsive a été développée avec React et met l’accent sur un design épuré, moderne et adaptable à tous les supports. L’objectif était de renforcer mes compétences en intégration et en responsive design.",
+    image: FoxartImage,
+    tags: ["React Js", "Tailwindcss", "Vite"],
     category: "web app",
     webapp: "Bientôt disponible",
   },
