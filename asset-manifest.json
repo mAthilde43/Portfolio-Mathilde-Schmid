@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio-Mathilde-Schmid/static/css/main.ea14250b.css",
-    "main.js": "/Portfolio-Mathilde-Schmid/static/js/main.847e83f3.js",
+    "main.js": "/Portfolio-Mathilde-Schmid/static/js/main.29ad7ebe.js",
     "static/media/Miam-Zelle-Recette.png": "/Portfolio-Mathilde-Schmid/static/media/Miam-Zelle-Recette.6fb840c7010a44168309.png",
     "static/media/Luxe-o-Clock.png": "/Portfolio-Mathilde-Schmid/static/media/Luxe-o-Clock.0bd23b6f6bb5c704346a.png",
     "static/media/StradaSTA.png": "/Portfolio-Mathilde-Schmid/static/media/StradaSTA.b24b9e6ceccc33952176.png",
     "static/media/Festivibes.png": "/Portfolio-Mathilde-Schmid/static/media/Festivibes.9f746316d87c1dd5854d.png",
     "static/media/Portfolio.png": "/Portfolio-Mathilde-Schmid/static/media/Portfolio.933a1dbe7a867ad323d8.png",
     "static/media/Foxart.png": "/Portfolio-Mathilde-Schmid/static/media/Foxart.9798ca5d7a0dd349b047.png",
-    "static/media/CV_Mathilde_Schmid.png": "/Portfolio-Mathilde-Schmid/static/media/CV_Mathilde_Schmid.8f3308e314927ad451b2.png",
+    "static/media/Mathilde Schmid-Curriculum Vitae.pdf": "/Portfolio-Mathilde-Schmid/static/media/Mathilde Schmid-Curriculum Vitae.a65afab19667814eae45.pdf",
     "static/media/Gest-Time.png": "/Portfolio-Mathilde-Schmid/static/media/Gest-Time.bd690784fadbe841db4b.png",
     "static/media/HeroImage.jpeg": "/Portfolio-Mathilde-Schmid/static/media/HeroImage.aeb3b1b77f3f74f5da03.jpeg",
     "index.html": "/Portfolio-Mathilde-Schmid/index.html",
     "main.ea14250b.css.map": "/Portfolio-Mathilde-Schmid/static/css/main.ea14250b.css.map",
-    "main.847e83f3.js.map": "/Portfolio-Mathilde-Schmid/static/js/main.847e83f3.js.map"
+    "main.29ad7ebe.js.map": "/Portfolio-Mathilde-Schmid/static/js/main.29ad7ebe.js.map"
   },
   "entrypoints": [
     "static/css/main.ea14250b.css",
-    "static/js/main.847e83f3.js"
+    "static/js/main.29ad7ebe.js"
   ]
 }
