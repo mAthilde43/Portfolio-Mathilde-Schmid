@@ -16,7 +16,7 @@ export const Bio = {
     "QA Tester",
   ],
   description:
-    "Actuellement en Bachelor CDA (Concepteur Développeur d'Applications) en alternance, je suis à la recherche d'une entreprise pouvant m'accueillir dès la rentrée 2025 pour poursuivre mes études en alternance dans le cadre d’un Master M2I (Manager en Ingénierie Informatique).",
+    "Après une première alternance réussie dans le cadre d’un Bachelor CDA (Concepteur Développeur d'Applications), je suis actuellement à la recherche d'une entreprise pour poursuivre ma formation en alternance dans le cadre d’un Master (2025–2027).",
   github: "https://github.com/mAthilde43",
   resume: CVMS,
   // linkedin: "",
@@ -40,6 +40,11 @@ export const skills = [
         name: "C#",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1820px-Logo_C_sharp.svg.png",
+      },
+      {
+        name: "C++",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
       },
       {
         name: "TypeScript",
@@ -96,7 +101,7 @@ export const skills = [
           "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png",
       },
       {
-        name: "MySQL",
+        name: "SQL",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       },
