@@ -5,7 +5,7 @@ import LuxeOClockImage from "../components/images/Luxe-o-Clock.png";
 import GestTimeImage from "../components/images/Gest-Time.png";
 import FoxartImage from "../components/images/Foxart.png";
 import Festivibes from "../components/images/Festivibes.png";
-import CVMS from "../components/images/CV_Mathilde_Schmid.png";
+import CVMS from "../components/images/Mathilde Schmid-Curriculum Vitae.pdf";
 
 export const Bio = {
   name: "Mathilde Schmid",
