@@ -5,7 +5,7 @@ import LuxeOClockImage from "../components/images/Luxe-o-Clock.png";
 import GestTimeImage from "../components/images/Gest-Time.png";
 import FoxartImage from "../components/images/Foxart.png";
 import Festivibes from "../components/images/Festivibes.png";
-import CVMS from "../components/images/Mathilde Schmid-Curriculum Vitae.pdf";
+import CVMS from "../components/images/Mathilde-Schmid-CurriculumVitae.pdf";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -16,7 +16,7 @@ export const Bio = {
     "QA Tester",
   ],
   description:
-    "Après une première alternance réussie dans le cadre d’un Bachelor CDA (Concepteur Développeur d'Applications), je suis actuellement à la recherche d'une entreprise pour poursuivre ma formation en alternance dans le cadre d’un Master (2025–2027).",
+    "Après une première alternance réussie dans le cadre d’un Bachelor CDA, je suis actuellement à la recherche d'une entreprise pour poursuivre ma formation en alternance dans le cadre d’un Master (Manager en Ingénierie Informatique).",
   github: "https://github.com/mAthilde43",
   resume: CVMS,
   // linkedin: "",
