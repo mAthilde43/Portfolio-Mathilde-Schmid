@@ -7,6 +7,7 @@ import FoxartImage from "../components/images/Foxart.png";
 import Festivibes from "../components/images/Festivibes.png";
 import CVMS from "../components/images/Mathilde-Schmid-CurriculumVitae.pdf";
 import InVoice from "../components/images/InVoice.png";
+import TodoList from "../components/images/TodoList.png";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -371,7 +372,19 @@ export const projects = [
     description:
       "Projet personnel développé avec Next.js et React : un gestionnaire de factures permettant de créer, gérer et télécharger des factures en PDF. L’application utilise Prisma pour la base de données, DaisyUI pour le design et Clerk pour l’authentification sécurisée",
     image: InVoice,
-    tags: ["Next.js", "React", "Prisma", "DaisyUi", "Clerk"],
+    tags: ["Next.js", "React", "Prisma", "TailwindCSS", "DaisyUi", "Clerk"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+
+  {
+    id: 17,
+    title: "Todo List",
+    date: "Août 2025",
+    description:
+      "Projet personnel développé avec Next.js et React : une Todo List permettant d’ajouter, supprimer et filtrer des tâches. L’application utilise DaisyUI et TailwindCSS pour le design et Lucide pour les icônes",
+    image: TodoList,
+    tags: ["Next.js", "React", "TailwindCSS", "DaisyUi", "Lucide React"],
     category: "web app",
     webapp: "Bientôt disponible",
   },
