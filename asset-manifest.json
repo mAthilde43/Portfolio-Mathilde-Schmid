@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Mathilde-Schmid/static/css/main.ea14250b.css",
-    "main.js": "/Portfolio-Mathilde-Schmid/static/js/main.e95f25c3.js",
+    "main.js": "/Portfolio-Mathilde-Schmid/static/js/main.dabbb552.js",
     "static/media/Miam-Zelle-Recette.png": "/Portfolio-Mathilde-Schmid/static/media/Miam-Zelle-Recette.6fb840c7010a44168309.png",
     "static/media/Luxe-o-Clock.png": "/Portfolio-Mathilde-Schmid/static/media/Luxe-o-Clock.0bd23b6f6bb5c704346a.png",
     "static/media/StradaSTA.png": "/Portfolio-Mathilde-Schmid/static/media/StradaSTA.b24b9e6ceccc33952176.png",
@@ -11,13 +11,14 @@
     "static/media/Mathilde-Schmid-CurriculumVitae.pdf": "/Portfolio-Mathilde-Schmid/static/media/Mathilde-Schmid-CurriculumVitae.d1fb4036860416e0c9da.pdf",
     "static/media/InVoice.png": "/Portfolio-Mathilde-Schmid/static/media/InVoice.7e66b3489ee592da9cac.png",
     "static/media/Gest-Time.png": "/Portfolio-Mathilde-Schmid/static/media/Gest-Time.bd690784fadbe841db4b.png",
+    "static/media/TodoList.png": "/Portfolio-Mathilde-Schmid/static/media/TodoList.eddade44ef9dbfd867a6.png",
     "static/media/HeroImage.jpeg": "/Portfolio-Mathilde-Schmid/static/media/HeroImage.aeb3b1b77f3f74f5da03.jpeg",
     "index.html": "/Portfolio-Mathilde-Schmid/index.html",
     "main.ea14250b.css.map": "/Portfolio-Mathilde-Schmid/static/css/main.ea14250b.css.map",
-    "main.e95f25c3.js.map": "/Portfolio-Mathilde-Schmid/static/js/main.e95f25c3.js.map"
+    "main.dabbb552.js.map": "/Portfolio-Mathilde-Schmid/static/js/main.dabbb552.js.map"
   },
   "entrypoints": [
     "static/css/main.ea14250b.css",
-    "static/js/main.e95f25c3.js"
+    "static/js/main.dabbb552.js"
   ]
 }
