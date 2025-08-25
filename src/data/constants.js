@@ -6,6 +6,7 @@ import GestTimeImage from "../components/images/Gest-Time.png";
 import FoxartImage from "../components/images/Foxart.png";
 import Festivibes from "../components/images/Festivibes.png";
 import CVMS from "../components/images/Mathilde-Schmid-CurriculumVitae.pdf";
+import InVoice from "../components/images/InVoice.png";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -118,6 +119,10 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
+      {
+        name: "Prisma",
+        image: "https://cdn.worldvectorlogo.com/logos/prisma-4.svg",
+      },
     ],
   },
 
@@ -166,6 +171,15 @@ export const skills = [
         name: "Jira",
         image:
           "https://images.icon-icons.com/2699/PNG/512/atlassian_jira_logo_icon_170511.png",
+      },
+      {
+        name: "DaisyUi",
+        image: "https://img.daisyui.com/images/daisyui/daisyui-logo-2000.png",
+      },
+      {
+        name: "Clerk",
+        image:
+          "https://ph-files.imgix.net/297bc3d4-bd2e-4eaa-8fb6-a289cf61ea91.png?auto=format",
       },
     ],
   },
@@ -340,12 +354,24 @@ export const projects = [
 
   {
     id: 16,
-    title: "Projet C# ",
+    title: "Festi'Vibes",
     date: "Mars 2025",
     description:
       "Dans le cadre de ma formation, nous devons réalisé un projet en C# .NET. Ce projet a pour objectif de mettre en pratique les concepts appris en cours de formations.",
     image: Festivibes,
     tags: ["C#", "Tailwindcss", "Azure Devops", "Postgresql"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+
+  {
+    id: 17,
+    title: "InVoice",
+    date: "Août 2025",
+    description:
+      "Projet personnel développé avec Next.js et React : un gestionnaire de factures permettant de créer, gérer et télécharger des factures en PDF. L’application utilise Prisma pour la base de données, DaisyUI pour le design et Clerk pour l’authentification sécurisée",
+    image: InVoice,
+    tags: ["Next.js", "React", "Prisma", "DaisyUi", "Clerk"],
     category: "web app",
     webapp: "Bientôt disponible",
   },
