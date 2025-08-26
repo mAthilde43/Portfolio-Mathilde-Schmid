@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio-Mathilde-Schmid/static/css/main.ea14250b.css",
-    "main.js": "/Portfolio-Mathilde-Schmid/static/js/main.dabbb552.js",
+    "main.js": "/Portfolio-Mathilde-Schmid/static/js/main.95306e1b.js",
     "static/media/Miam-Zelle-Recette.png": "/Portfolio-Mathilde-Schmid/static/media/Miam-Zelle-Recette.6fb840c7010a44168309.png",
     "static/media/Luxe-o-Clock.png": "/Portfolio-Mathilde-Schmid/static/media/Luxe-o-Clock.0bd23b6f6bb5c704346a.png",
     "static/media/StradaSTA.png": "/Portfolio-Mathilde-Schmid/static/media/StradaSTA.b24b9e6ceccc33952176.png",
     "static/media/Festivibes.png": "/Portfolio-Mathilde-Schmid/static/media/Festivibes.9f746316d87c1dd5854d.png",
     "static/media/Portfolio.png": "/Portfolio-Mathilde-Schmid/static/media/Portfolio.933a1dbe7a867ad323d8.png",
+    "static/media/eLogo.png": "/Portfolio-Mathilde-Schmid/static/media/eLogo.944330aeb7e2920f263c.png",
     "static/media/Foxart.png": "/Portfolio-Mathilde-Schmid/static/media/Foxart.9798ca5d7a0dd349b047.png",
     "static/media/Mathilde-Schmid-CurriculumVitae.pdf": "/Portfolio-Mathilde-Schmid/static/media/Mathilde-Schmid-CurriculumVitae.d1fb4036860416e0c9da.pdf",
     "static/media/InVoice.png": "/Portfolio-Mathilde-Schmid/static/media/InVoice.7e66b3489ee592da9cac.png",
@@ -15,10 +16,10 @@
     "static/media/HeroImage.jpeg": "/Portfolio-Mathilde-Schmid/static/media/HeroImage.aeb3b1b77f3f74f5da03.jpeg",
     "index.html": "/Portfolio-Mathilde-Schmid/index.html",
     "main.ea14250b.css.map": "/Portfolio-Mathilde-Schmid/static/css/main.ea14250b.css.map",
-    "main.dabbb552.js.map": "/Portfolio-Mathilde-Schmid/static/js/main.dabbb552.js.map"
+    "main.95306e1b.js.map": "/Portfolio-Mathilde-Schmid/static/js/main.95306e1b.js.map"
   },
   "entrypoints": [
     "static/css/main.ea14250b.css",
-    "static/js/main.dabbb552.js"
+    "static/js/main.95306e1b.js"
   ]
 }
