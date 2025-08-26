@@ -8,6 +8,7 @@ import Festivibes from "../components/images/Festivibes.png";
 import CVMS from "../components/images/Mathilde-Schmid-CurriculumVitae.pdf";
 import InVoice from "../components/images/InVoice.png";
 import TodoList from "../components/images/TodoList.png";
+import Elogo from "../components/images/eLogo.png";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -378,12 +379,24 @@ export const projects = [
   },
 
   {
-    id: 17,
+    id: 18,
     title: "Todo List",
     date: "Août 2025",
     description:
       "Projet personnel développé avec Next.js et React : une Todo List permettant d’ajouter, supprimer et filtrer des tâches. L’application utilise DaisyUI et TailwindCSS pour le design et Lucide pour les icônes",
     image: TodoList,
+    tags: ["React", "TailwindCSS", "DaisyUi", "Lucide React"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+
+  {
+    id: 19,
+    title: "eLogo",
+    date: "Août 2025",
+    description:
+      "Projet personnel développé avec Next.js et React : une application de création de logos avec possibilité de téléchargement. L’interface utilise DaisyUI et TailwindCSS pour le design et Lucide pour les icônes.",
+    image: Elogo,
     tags: ["Next.js", "React", "TailwindCSS", "DaisyUi", "Lucide React"],
     category: "web app",
     webapp: "Bientôt disponible",
