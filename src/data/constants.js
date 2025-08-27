@@ -9,6 +9,7 @@ import CVMS from "../components/images/Mathilde-Schmid-CurriculumVitae.pdf";
 import InVoice from "../components/images/InVoice.png";
 import TodoList from "../components/images/TodoList.png";
 import Elogo from "../components/images/eLogo.png";
+import CvBuilder from "../components/images/CvBuilder.png";
 
 export const Bio = {
   name: "Mathilde Schmid",
@@ -397,6 +398,18 @@ export const projects = [
     description:
       "Projet personnel développé avec Next.js et React : une application de création de logos avec possibilité de téléchargement. L’interface utilise DaisyUI et TailwindCSS pour le design et Lucide pour les icônes.",
     image: Elogo,
+    tags: ["Next.js", "React", "TailwindCSS", "DaisyUi", "Lucide React"],
+    category: "web app",
+    webapp: "Bientôt disponible",
+  },
+
+  {
+    id: 20,
+    title: "CvBuilder",
+    date: "Août 2025",
+    description:
+      "Projet personnel développé avec Next.js et React : un générateur de CV en PDF avec possibilité de téléchargement. L’interface utilise DaisyUI et TailwindCSS pour le design et Lucide React pour les icônes.",
+    image: CvBuilder,
     tags: ["Next.js", "React", "TailwindCSS", "DaisyUi", "Lucide React"],
     category: "web app",
     webapp: "Bientôt disponible",
